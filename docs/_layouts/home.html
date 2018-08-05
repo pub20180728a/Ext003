@@ -12,9 +12,12 @@ layout: default
 {% endfor %}
 </ul>
 
+## inc list try2
+just dump obj
+{{ site.includes }}
 ### lists inc as inc_post
 <ul class="myposts">
-{% for post in site.includes %}
+{% for page in site.includes %}
     <li><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title}}</a>
     <span class="postDate">{{ post.date | date: "%b %-d, %Y" }}</span>
     </li>
@@ -23,7 +26,7 @@ layout: default
 
 ### lists inc as inc_page
 <ul class="myposts">
-{% for post in site.includes %}
+{% for page in site.includes %}
     <li><a href="{{ site.baseurl }}{{ page.url }}">{{ page.title}}</a>
     <span class="postDate">{{ page.date | date: "%b %-d, %Y" }}</span>
     </li>
@@ -32,7 +35,7 @@ layout: default
 
 ### lists inc as inc_inc
 <ul class="myposts">
-{% for post in site.includes %}
+{% for page in site.includes %}
     <li><a href="{{ site.baseurl }}{{ include.url }}">{{ include.title}}</a>
     <span class="postDate">{{ include.date | date: "%b %-d, %Y" }}</span>
     </li>
