@@ -4,7 +4,12 @@ layout: default
 
 Home
 
-v-015
+v-016
+
+---
+### dump just the 1 post
+{{ post./2018/01/02/nn001 }}
+
 
 ---
 ### include 1
