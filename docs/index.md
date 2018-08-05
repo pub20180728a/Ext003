@@ -1,6 +1,10 @@
+---
+layout: default
+---
+
 Home
 
-v-008
+v-010
 
 ---
 ### include 1
@@ -15,3 +19,23 @@ v-008
 
 ### site.baseurl
 {{site.baseurl}}
+
+### list Posts
+<ul class="myposts">
+{% for post in site.posts %}
+    <li><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title}}</a>
+    <span class="postDate">{{ post.date | date: "%b %-d, %Y" }}</span>
+    </li>
+{% endfor %}
+</ul>
+
+### list pages
+<ul class="myposts">
+{% for page in site.pages %}
+    <li><a href="{{ site.baseurl }}{{ pages.url }}">{{ page.path}}</a>
+    </li>
+{% endfor %}
+</ul>
+
+### dump static
+{{ site.static_files }}
