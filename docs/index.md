@@ -4,7 +4,7 @@ layout: default
 
 Home
 
-v-011
+v-012
 
 ---
 ### include 1
@@ -39,3 +39,6 @@ v-011
 
 ### dump static
 {{ site.static_files }}
+
+### dump static
+{{ site.posts }}
