@@ -4,7 +4,7 @@ layout: default
 
 Home
 
-v-016
+v-020
 
 ---
 ### dump just the 1 post
@@ -42,11 +42,9 @@ v-016
 {% endfor %}
 </ul>
 
-### dumpt site.html_files
+### dump site.html_files
 {{ site.html_files }}
 
 ### dump static
 {{ site.static_files }}
 
-### dump posts
-{{ site.posts }}
