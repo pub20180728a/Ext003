@@ -4,7 +4,7 @@ layout: default
 
 Home
 
-v-012
+v-013
 
 ---
 ### include 1
@@ -37,8 +37,11 @@ v-012
 {% endfor %}
 </ul>
 
+### dumpt site.html_files
+{{ site.html_files }}
+
 ### dump static
 {{ site.static_files }}
 
-### dump static
+### dump posts
 {{ site.posts }}
