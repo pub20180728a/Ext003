@@ -4,7 +4,7 @@ layout: default
 
 Home
 
-v-013
+v-014
 
 ---
 ### include 1
@@ -23,7 +23,7 @@ v-013
 ### list Posts
 <ul class="myposts">
 {% for post in site.posts %}
-    <li><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a> {{ post.path }}
+    <li><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a> {{ post.id }}
     <span class="postDate">{{ post.date | date: "%b %-d, %Y" }}</span>
     </li>
 {% endfor %}
